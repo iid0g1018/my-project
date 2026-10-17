@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>CampEase 營地查詢系統</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CampEase 營地查詢系統</h1>
+        <p>依照地區、標籤、海拔與價格，快速找到適合的營地。</p>
+
+        <nav class="nav-links">
+            <a href="index.html">營地查詢</a>
+            <a href="applications.html">營地申請</a>
+            <a href="admin.html">管理員審核</a>
+            <a href="rental.html">用品租借</a>
+            <a href="statistics.html">統計分析</a>
+            <a href="campsite-management.html">營地管理</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filter-section">
+            <h2>營地查詢</h2>
+
+            <div class="filter-box">
+                <label>
+                    縣市：
+                    <select id="county">
+                        <option value="">全部</option>
+                        <option value="桃園市">桃園市</option>
+                        <option value="新竹縣">新竹縣</option>
+                        <option value="苗栗縣">苗栗縣</option>
+                        <option value="南投縣">南投縣</option>
+                        <option value="宜蘭縣">宜蘭縣</option>
+                    </select>
+                </label>
+
+                <label>
+                    標籤：
+                    <select id="tag">
+                        <option value="">全部</option>
+                        <option value="新手友善">新手友善</option>
+                        <option value="低海拔">低海拔</option>
+                        <option value="中海拔">中海拔</option>
+                        <option value="高海拔">高海拔</option>
+                        <option value="親子友善">親子友善</option>
+                        <option value="寵物友善">寵物友善</option>
+                        <option value="星空景觀">星空景觀</option>
+                        <option value="近溪流">近溪流</option>
+                        <option value="森林系">森林系</option>
+                        <option value="平價">平價</option>
+                        <option value="安靜">安靜</option>
+                    </select>
+                </label>
+
+                <label>
+                    最高海拔：
+                    <input type="number" id="maxElevation" placeholder="例如 800">
+                </label>
+
+                <label>
+                    最高價格：
+                    <input type="number" id="maxPrice" placeholder="例如 1500">
+                </label>
+
+                <button onclick="searchCampsites()">查詢</button>
+                <button class="secondary" onclick="resetSearch()">清除條件</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>營地列表</h2>
+            <div id="campsiteList" class="card-container"></div>
+        </section>
+
+        <section id="detailSection" class="detail-section hidden">
+            <h2>營地詳細資料</h2>
+            <div id="campsiteDetail"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

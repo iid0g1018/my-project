@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>CampEase 露營用品租借</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CampEase 露營用品租借</h1>
+        <p>查詢露營用品、選擇數量並送出租借申請。</p>
+
+        <nav class="nav-links">
+            <a href="index.html">營地查詢</a>
+            <a href="applications.html">營地申請</a>
+            <a href="admin.html">管理員審核</a>
+            <a href="rental.html">用品租借</a>
+            <a href="statistics.html">統計分析</a>
+            <a href="campsite-management.html">營地管理</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filter-section">
+            <h2>租借日期</h2>
+
+            <div class="filter-box">
+                <label>
+                    租借開始日期：
+                    <input type="date" id="startDate">
+                </label>
+
+                <label>
+                    歸還日期：
+                    <input type="date" id="endDate">
+                </label>
+
+                <label>
+                    用品分類：
+                    <select id="category">
+                        <option value="">全部</option>
+                        <option value="帳篷">帳篷</option>
+                        <option value="寢具">寢具</option>
+                        <option value="照明">照明</option>
+                        <option value="炊具">炊具</option>
+                        <option value="家具">家具</option>
+                        <option value="食物保存">食物保存</option>
+                        <option value="電器">電器</option>
+                    </select>
+                </label>
+
+                <button onclick="loadRentalItems()">查詢用品</button>
+                <button class="secondary" onclick="resetRentalSearch()">清除條件</button>
+            </div>
+
+            <p id="message"></p>
+        </section>
+
+        <section>
+            <h2>露營用品列表</h2>
+            <div id="rentalItemList" class="card-container"></div>
+        </section>
+
+        <section class="filter-section">
+            <h2>送出租借訂單</h2>
+            <p>請先在上方用品卡片輸入數量，再按送出租借訂單。</p>
+            <button onclick="submitRentalOrder()">送出租借訂單</button>
+        </section>
+
+        <section>
+            <h2>租借紀錄</h2>
+            <div id="rentalOrderList" class="card-container"></div>
+        </section>
+    </main>
+
+    <script src="rental.js"></script>
+</body>
+</html>

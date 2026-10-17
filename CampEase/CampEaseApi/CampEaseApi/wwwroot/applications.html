@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>CampEase 營地申請</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CampEase 營地申請</h1>
+        <p>選擇想申請的營地，填寫日期與人數後送出申請。</p>
+
+        <nav class="nav-links">
+            <a href="index.html">營地查詢</a>
+            <a href="applications.html">營地申請</a>
+            <a href="admin.html">管理員審核</a>
+            <a href="rental.html">用品租借</a>
+            <a href="statistics.html">統計分析</a>
+            <a href="campsite-management.html">營地管理</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filter-section">
+            <h2>新增營地申請</h2>
+
+            <form id="applicationForm" class="form-box">
+                <label>
+                    選擇營地：
+                    <select id="campsiteId" required>
+                        <option value="">載入中...</option>
+                    </select>
+                </label>
+
+                <label>
+                    入住日期：
+                    <input type="date" id="startDate" required>
+                </label>
+
+                <label>
+                    離開日期：
+                    <input type="date" id="endDate" required>
+                </label>
+
+                <label>
+                    人數：
+                    <input type="number" id="peopleCount" min="1" placeholder="例如 4" required>
+                </label>
+
+                <label>
+                    備註：
+                    <textarea id="note" rows="4" placeholder="例如：第一次露營，希望選擇新手友善營地"></textarea>
+                </label>
+
+                <button type="submit">送出申請</button>
+            </form>
+
+            <p id="message"></p>
+        </section>
+
+        <section>
+            <h2>申請紀錄</h2>
+            <div id="applicationList" class="card-container"></div>
+        </section>
+    </main>
+
+    <script src="applications.js"></script>
+</body>
+</html>

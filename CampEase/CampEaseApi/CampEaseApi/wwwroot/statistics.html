@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>CampEase 統計分析</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CampEase 統計分析</h1>
+        <p>透過資料庫聚合查詢，分析營地、申請與租借資料。</p>
+
+        <nav class="nav-links">
+            <a href="index.html">營地查詢</a>
+            <a href="applications.html">營地申請</a>
+            <a href="admin.html">管理員審核</a>
+            <a href="rental.html">用品租借</a>
+            <a href="statistics.html">統計分析</a>
+            <a href="campsite-management.html">營地管理</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>系統總覽</h2>
+            <div id="summaryCards" class="summary-grid"></div>
+        </section>
+
+        <section class="filter-section">
+            <h2>各地區營地統計</h2>
+            <p>統計每個地區的營地數量、平均價格、最低價格與最高價格。</p>
+            <div id="regionStats"></div>
+        </section>
+
+        <section class="filter-section">
+            <h2>營地標籤統計</h2>
+            <p>統計各標籤被多少個營地使用，例如新手友善、低海拔、親子友善。</p>
+            <div id="tagStats"></div>
+        </section>
+
+        <section class="filter-section">
+            <h2>熱門租借用品排行</h2>
+            <p>依照租借數量與租借收入，分析最熱門的露營用品。</p>
+            <div id="rentalPopularStats"></div>
+        </section>
+    </main>
+
+    <script src="statistics.js"></script>
+</body>
+</html>

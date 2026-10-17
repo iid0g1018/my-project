@@ -3,3 +3,11 @@
 C#-project/1131724project.csproj.user
 /C#-project/obj
 HTML-project/video/song2.mp4
+# Visual Studio 暫存與個人設定
+.vs/
+*.csproj.user
+*.suo
+
+# .NET 編譯產物
+[Bb]in/
+[Oo]bj/

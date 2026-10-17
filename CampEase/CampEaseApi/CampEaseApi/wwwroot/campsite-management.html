@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>CampEase 營地管理</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CampEase 營地管理</h1>
+        <p>管理員可以新增、修改與下架營地資料。</p>
+
+        <nav class="nav-links">
+            <a href="index.html">營地查詢</a>
+            <a href="applications.html">營地申請</a>
+            <a href="admin.html">管理員審核</a>
+            <a href="rental.html">用品租借</a>
+            <a href="statistics.html">統計分析</a>
+            <a href="campsite-management.html">營地管理</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filter-section">
+            <h2 id="formTitle">新增營地</h2>
+
+            <form id="campsiteForm" class="form-box">
+                <input type="hidden" id="editingCampsiteId">
+
+                <label>
+                    地區：
+                    <select id="regionId" required>
+                        <option value="">請選擇地區</option>
+                        <option value="1">桃園市 復興區</option>
+                        <option value="2">新竹縣 尖石鄉</option>
+                        <option value="3">苗栗縣 南庄鄉</option>
+                        <option value="4">苗栗縣 泰安鄉</option>
+                        <option value="5">南投縣 埔里鎮</option>
+                        <option value="6">宜蘭縣 大同鄉</option>
+                    </select>
+                </label>
+
+                <label>
+                    營地名稱：
+                    <input type="text" id="campsiteName" placeholder="例如：月光森林營地" required>
+                </label>
+
+                <label>
+                    地址：
+                    <input type="text" id="address" placeholder="例如：苗栗縣南庄鄉月光路 66 號">
+                </label>
+
+                <label>
+                    海拔：
+                    <input type="number" id="elevation" placeholder="例如：600" required>
+                </label>
+
+                <label>
+                    每晚價格：
+                    <input type="number" id="pricePerNight" placeholder="例如：1400" required>
+                </label>
+
+                <label>
+                    容納人數：
+                    <input type="number" id="capacity" placeholder="例如：36" required>
+                </label>
+
+                <label>
+                    狀態：
+                    <select id="status">
+                        <option value="available">available 可預約</option>
+                        <option value="closed">closed 已下架</option>
+                    </select>
+                </label>
+
+                <label>
+                    營地描述：
+                    <textarea id="description" rows="4" placeholder="例如：適合新手與小團體露營，環境安靜且設備完整。"></textarea>
+                </label>
+
+                <div class="button-group">
+                    <button type="submit">儲存營地</button>
+                    <button type="button" class="secondary" onclick="clearForm()">清空表單</button>
+                </div>
+            </form>
+
+            <p id="message"></p>
+        </section>
+
+        <section>
+            <h2>目前營地列表</h2>
+            <div id="campsiteList" class="card-container"></div>
+        </section>
+    </main>
+
+    <script src="campsite-management.js"></script>
+</body>
+</html>
