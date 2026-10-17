@@ -1,0 +1,29 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+}body {
+	width: 100%;
+	min-width: 600px;
+	margin: 0 auto;
+}
+#one2 {
+	width: 20%;
+	height: 1500px;
+	margin-right: 0;
+	float: left;
+	background: black;
+}
+#two2 {
+	width: 47.2%;
+	height: 1500px;
+	margin-right: 0;
+	float: left;
+	background: #731cad;
+}
+#three2 {
+	width: 32.8%;
+	height: 1500px;
+	float: left;
+	background: black;
+}

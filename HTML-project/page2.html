@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=LXGW+WenKai+TC&family=Noto+Serif+JP:wght@900&family=Noto+Serif+TC:wght@900&family=Zen+Kurenaido&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+	<style>
+	  * {
+	    margin: 0;
+		padding: 0;
+	  }
+	  body {
+	    width: 100%;
+		min-width: 1080px;
+		margin: 0 auto;
+	  }
+	  header {
+	    width: 100%;
+		height: 180px;
+		background-color: #266c58;
+	  }
+	  nav {
+	    width: 100%;
+		height: 100px;
+		background-color: #a9b5a3;
+	  }
+	  main {
+	    width: 100%;
+		height: 2300px;
+		background-color: white;
+	  }
+	  footer {
+	    width: 100%;
+		height: 130px;
+		background-color: #333333;
+		clear: both;
+	  }
+.zen-old-mincho-regular {
+  font-family: "Zen Old Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+    }
+.dela-gothic-one-regular {
+  font-family: "Dela Gothic One", serif;
+  font-weight: 400;
+  font-style: normal;
+    }
+.zen-kurenaido-regular {
+  font-family: "Zen Kurenaido", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+	</style>
+  </head>
+  <body>
+	<nav class="navbar navbar-expand-md bg-body-tertiary">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#"><font size="70" class="dela-gothic-one-regular">EVAシーン</font></a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+		data-bs-target="#navbar1">
+		  <span class="navbar-toggler-icon"></span></button>
+		<div class="collapse navbar-collapse" id="navbar1">
+		  <ul class="navbar-nav me-auto">
+		    <li class="nav-link dropdown">
+			  <a class="nav-link dropdown-toggle" href="#"
+			  data-bs-toggle="dropdown">時間線</a>
+			    <div class="dropdown-menu">
+				  <a class="dropdown-item" href="#">舊劇場版</a>
+				  <a class="dropdown-item" href="#">新劇場版</a>
+				</div>
+			</li>
+		  </ul>
+		</div>
+		<form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="搜尋">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+	  </div>
+	</nav>
+	<main>
+	<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+	  <div class="carousel-indicators">
+	    <button type="button" data-bs-target="myCarousel" data-bs-slide-to="0"
+		class="active"></button>
+	    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+		<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+		<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"></button>
+		<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4"></button>
+		<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5"></button>
+	  </div>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+		  <img src="images/img1.jpg" class="d-block w-100" alt="海">
+		  <div class="carousel-caption">
+		    <h3><font class="zen-old-mincho-regular">青い海</font></h3>
+		  </div>
+		</div>
+		<div class="carousel-item">
+		  <img src="images/img3.jpg" class="d-block w-100" alt="塔">
+		  <div class="carousel-caption">
+		    <h3><font class="zen-old-mincho-regular">エッフェル塔</font></h3>
+		  </div>
+		</div>
+		<div class="carousel-item">
+		  <img src="images/img4.jpg" class="d-block w-100" alt="遺址">
+		  <div class="carousel-caption">
+		    <h3><font class="zen-old-mincho-regular">基地遺跡</font></h3>
+		  </div>
+		</div>
+		<div class="carousel-item">
+		  <img src="images/img6.jpg" class="d-block w-100" alt="夜">
+		  <div class="carousel-caption">
+		    <h3><font class="zen-old-mincho-regular">暗い夜</font></h3>
+		  </div>
+		</div>
+		<div class="carousel-item">
+		  <img src="images/img5.jpg" class="d-block w-100" alt="貓">
+		  <div class="carousel-caption">
+		    <h3><font class="zen-old-mincho-regular">エコロジーと猫</font></h3>
+		  </div>
+		</div>
+		<div class="carousel-item">
+		  <img src="images/img7.jpg" class="d-block w-100" alt="原諒">
+		  <div class="carousel-caption">
+		    <h3><font class="zen-old-mincho-regular">許しは14年遅すぎた</font></h3>
+		  </div>
+		</div>
+	  </div>
+	  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+	  data-bs-slide="prev"><span class="carousel-control-prev-icon"></span>
+	  <span class="visually-hidden">Previous</span></button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+	  data-bs-slide="next"><span class="carousel-control-next-icon"></span>
+	  <span class="visually-hidden">Previous</span></button>
+	</div>
+	<br><br><br>
+	<div class="container">
+	  <div class="row">
+	    <div class="col-sm-6">
+		  <div class="card">
+		    <img class="card-img-top" src="images/reiroom.jpg" >
+			<div class="card-body">
+			  <h4 class="card-title"><font class="zen-old-mincho-regular">綾波レイの房間(舊版)</font></h4>
+			  <p class="card-text"><font class="zen-old-mincho-regular">
+			  零似乎對生活打理和衛生觀念一無所知，這點反映在她住的公寓上——屋內既缺乏清潔又空虛，像是被主人忽視和放棄一樣。
+			  零的公寓裡，桌上散落著許多繃帶和藥品。⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</font></p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="col-sm-6">
+		  <div class="card">
+		    <img class="card-img-top" src="images/reiroom2.jpg" >
+			<div class="card-body">
+			  <h4 class="card-title"><font class="zen-old-mincho-regular">綾波レイの房間(新版)</font></h4>
+			  <p class="card-text"><font class="zen-old-mincho-regular">
+			  第6集結尾，兩人攜手擊敗使徒後，零在真嗣的建議下第一次對他露出了微笑，零的桌上出現了真嗣給他的walk man。
+			  真嗣的行為對零的內心世界造成了極大的影響並改變了她，她也因此多次對真嗣表達出關心和感激之情。</font></p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<br>
+	<div class="container">
+	  <div class="row">
+	    <div class="col-sm-6">
+		  <div class="card">
+		    <img class="card-img-top" src="images/child2.jpg" >
+			<div class="card-body">
+			  <h4 class="card-title"><font class="zen-old-mincho-regular">童年(真嗣)</font></h4>
+			  <p class="card-text"><font class="zen-old-mincho-regular">
+			  親眼目睹了母親碇唯在實驗當中消失的整個意外後，父親將真嗣交由他人照顧，於是兩人分居十年以上
+			  雖然父親是他唯一的血親，不過他對父親卻沒有愛，只抱持著憎恨的情感。碇源堂是他兒子深刻內心衝突的根源。
+			  </font></p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="col-sm-6">
+		  <div class="card">
+		    <img class="card-img-top" src="images/child.jpg" >
+			<div class="card-body">
+			  <h4 class="card-title"><font class="zen-old-mincho-regular">童年(明日香)</font></h4>
+			  <p class="card-text"><font class="zen-old-mincho-regular">
+			  她在幼年時目睹精神失常的母親自殺，因而造成她只能藉由向周圍的人展示自己的優秀，而確認自己存在意義。
+			  其實她是一個想向母親撒嬌、哭喊的孩子，但在母親精神失常後，她決定不再哭泣、不再依靠他人，並努力讓自己表現得像個成年人。
+			  </font></p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<br>
+	<div class="container">
+	  <div class="row">
+	    <div class="col-sm-6">
+		  <div class="card">
+		    <img class="card-img-top" src="images/gay.jpg" >
+			<div class="card-body">
+			  <h4 class="card-title"><font class="zen-old-mincho-regular">為了遇見你而生</font></h4>
+			  <p class="card-text"><font class="zen-old-mincho-regular">
+			  薰主動向孤獨無助的真嗣搭話，教他彈鋼琴，伴隨著反覆的鋼琴聯彈練習。
+			  兩人建立了信任關係。之後，薰告知真嗣十四年間的變化，向他展示滿目瘡痍的世界真嗣得知真相後於是精神崩潰，薰鼓勵著真嗣，稱就像鋼琴聯彈一樣，兩人駕駛EVA第13號機去修復世界。然而，
+			  修復世界的方案包含碇源堂設計的陷阱，最終，薰被迫以死阻止第四次衝擊。薰在臨死前不斷安慰真嗣，而真嗣只能看著薰受死卻什麼也做不了。</font></p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="col-sm-6">
+		  <div class="card">
+		    <img class="card-img-top" src="images/gay2.jpg" >
+			<div class="card-body">
+			  <h4 class="card-title"><font class="zen-old-mincho-regular">這次只想讓你幸福</font></h4>
+			  <p class="card-text"><font class="zen-old-mincho-regular">
+			  系列終章《福音戰士新劇場版：終》揭示，渚薰在故事中多次輪迴，旨在讓真嗣獲得幸福。他亦是真正的第一使徒、SEELE和加持等人的高層，在察覺自己只是透過真嗣獲得幸福讓自己感到幸福後，
+			  跟著加持離開，把剩下的事交給真嗣處理，跟著真嗣一起到達真嗣所創造沒有EVA的新世界。⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</font></p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	</main>
+	<footer>
+	</footer>
+  </body>
+</html> 

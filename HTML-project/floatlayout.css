@@ -1,0 +1,39 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+	width: 100%;
+	min-width: 600px;
+	background: white;
+	margin: 0 auto;
+}
+#one {
+	width: 15%;
+	height: 800px;
+	background: white;
+	margin-right: 0;
+	float: left;
+}
+#two {
+	width: 70%;
+	height: 950px;
+	margin-right: 0;
+	float: left;
+}
+#three {
+	width: 15%;
+	height: 800px;
+	background: white;
+	float: right;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+}
+.item {
+	background-image:radial-gradient(45deg, #6822ab, #a33ad1, #e669ed); 
+	padding: 13px;
+	margin: 13px;
+}

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+	min-width: 600px;
+	background: black;
+	margin: 0 auto;
+}
+#one {
+	width: 23%;
+	height: 1000px;
+	background: black;
+	margin-right: 0%;
+	float: left;
+}
+#two {
+	width: 54%;
+	height: 1000px;
+	background: #130f1a;
+	margin-right: 0%;
+	float: left;
+}
+#three {
+	width: 23%;
+	height: 1000px;
+	background: black;
+	margin-right: 0%;
+	float: right;
+}
